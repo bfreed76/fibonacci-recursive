@@ -1,5 +1,16 @@
 function fibonacci(n) {
-  // type your code here
+  if (n<2) {
+    return n
+  }
+  
+  const nextTwo = [0,1]
+
+  for(let i = 0; i < n -1; ++i) {
+    nextTwo.push(nextTwo[nextTwo.length -1] + nextTwo[nextTwo.length-2])
+  }
+
+  return nextTwo[nextTwo.length -1]
+
 }
 
 if (require.main === module) {
