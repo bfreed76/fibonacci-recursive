@@ -31,5 +31,5 @@ if (require.main === module) {
 
 module.exports = fibonacci;
 
-// Please add your pseudocode to this file
+// Basecases: If n < 2, return n. If nextTwo.length -1 = n, return nextTwo.length -1.
 // And a written explanation of your solution
